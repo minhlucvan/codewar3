@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profile",
+  "info": {
+    "name": "Profile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "widget": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.avatar"
+      ]
+    }
+  }
+}
