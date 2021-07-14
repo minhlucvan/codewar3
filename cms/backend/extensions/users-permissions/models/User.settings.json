@@ -62,6 +62,10 @@
     "categories": {
       "via": "users_permissions_user",
       "collection": "category"
+    },
+    "profiles": {
+      "via": "user",
+      "collection": "profile"
     }
   }
 }
