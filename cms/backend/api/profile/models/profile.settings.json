@@ -29,6 +29,20 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "profiles"
+    },
+    "widgets": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.cover",
+        "sections.avatar"
+      ]
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "personal1",
+        "bussiess1"
+      ]
     }
   }
 }

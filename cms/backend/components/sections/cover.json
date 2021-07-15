@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_covers",
+  "info": {
+    "name": "cover",
+    "icon": "layer-group"
+  },
+  "options": {},
+  "attributes": {
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
