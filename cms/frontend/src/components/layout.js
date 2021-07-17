@@ -7,7 +7,7 @@ import Footer from "~/components/footer"
 
 import Header from "~/components/header"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, noHeader }) => {
   const data = useStaticQuery(graphql`
     query SiteNameQuery {
       strapiGlobal {
@@ -20,11 +20,13 @@ const Layout = ({ children }) => {
 
   return (
     <div className="bg-gray-50 relative">
-      <Header
-        setOpenModal={setOpenModal}
-        siteName={data.strapiGlobal.siteName || `Strapi`}
-      />
-      <div className="flex flex-col max-w-screen-lg m-auto min-h-screen p-6 md:p-10">
+      {!noHeader && (
+        <Header
+          setOpenModal={setOpenModal}
+          siteName={data.strapiGlobal.siteName || `Strapi`}
+        />
+      )}
+      <div className="flex flex-col">
         <main className="flex-1">{children}</main>
         <Footer />
       </div>

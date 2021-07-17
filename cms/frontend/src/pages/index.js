@@ -3,17 +3,14 @@ import { graphql } from "gatsby"
 
 import Layout from "~/components/layout"
 import SEO from "~/components/seo"
-import CategoryList from "~/components/category-list"
-import PageHeading from "~/components/styled/page-heading"
+import Landing from "../views/Landing"
 
 const IndexPage = ({ data: { allStrapiCategory } }) => {
-  const categories = allStrapiCategory.edges
   const seo = { title: "Categories" }
   return (
-    <Layout>
+    <Layout noHeader>
       <SEO seo={seo} />
-      <PageHeading>Categories</PageHeading>
-      <CategoryList categories={categories} />
+      <Landing />
     </Layout>
   )
 }
