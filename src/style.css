@@ -1,0 +1,6 @@
+.customize-input {
+}
+
+.customize-input input:focus {
+  box-shadow: none;
+}
