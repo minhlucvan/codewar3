@@ -1,9 +1,12 @@
-import React from "react"
+import React from 'react'
 
-import Navbar from "../../components/Navbar.js"
-import FooterSmall from "../../components/FooterSmall.js"
+import FooterSmall from '../../components/FooterSmall.js'
 
 export default function Login() {
+  const handleLogin = React.useCallback(() => {
+    
+  }, [])
+
   return (
     <>
       <main>
@@ -12,11 +15,11 @@ export default function Login() {
             className="absolute top-0 w-full h-full bg-gray-900"
             style={{
               backgroundImage:
-                "url(" +
-                require("../images/login/register_bg_2.png").default +
-                ")",
-              backgroundSize: "100%",
-              backgroundRepeat: "no-repeat",
+                'url(' +
+                require('../images/login/register_bg_2.png').default +
+                ')',
+              backgroundSize: '100%',
+              backgroundRepeat: 'no-repeat',
             }}
           ></div>
           <div className="container mx-auto px-4 h-full">
@@ -33,24 +36,25 @@ export default function Login() {
                       <button
                         className="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
                         type="button"
-                        style={{ transition: "all .15s ease" }}
+                        style={{ transition: 'all .15s ease' }}
                       >
                         <img
                           alt="..."
                           className="w-5 mr-1"
-                          src={require("../images/login/github.svg").default}
+                          src={require('../images/login/github.svg').default}
                         />
                         Github
                       </button>
                       <button
+                        onClick={handleLogin}
                         className="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
                         type="button"
-                        style={{ transition: "all .15s ease" }}
+                        style={{ transition: 'all .15s ease' }}
                       >
                         <img
                           alt="..."
                           className="w-5 mr-1"
-                          src={require("../images/login/google.svg").default}
+                          src={require('../images/login/google.svg').default}
                         />
                         Google
                       </button>
@@ -73,7 +77,7 @@ export default function Login() {
                           type="email"
                           className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                           placeholder="Email"
-                          style={{ transition: "all .15s ease" }}
+                          style={{ transition: 'all .15s ease' }}
                         />
                       </div>
 
@@ -88,7 +92,7 @@ export default function Login() {
                           type="password"
                           className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                           placeholder="Password"
-                          style={{ transition: "all .15s ease" }}
+                          style={{ transition: 'all .15s ease' }}
                         />
                       </div>
                       <div>
@@ -97,7 +101,7 @@ export default function Login() {
                             id="customCheckLogin"
                             type="checkbox"
                             className="form-checkbox border-0 rounded text-gray-800 ml-1 w-5 h-5"
-                            style={{ transition: "all .15s ease" }}
+                            style={{ transition: 'all .15s ease' }}
                           />
                           <span className="ml-2 text-sm font-semibold text-gray-700">
                             Remember me
@@ -109,7 +113,7 @@ export default function Login() {
                         <button
                           className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
                           type="button"
-                          style={{ transition: "all .15s ease" }}
+                          style={{ transition: 'all .15s ease' }}
                         >
                           Sign In
                         </button>
@@ -121,7 +125,7 @@ export default function Login() {
                   <div className="w-1/2">
                     <a
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       className="text-gray-300"
                     >
                       <small>Forgot password?</small>
@@ -130,7 +134,7 @@ export default function Login() {
                   <div className="w-1/2 text-right">
                     <a
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       className="text-gray-300"
                     >
                       <small>Create new account</small>

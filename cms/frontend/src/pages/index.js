@@ -1,12 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "~/components/layout"
-import SEO from "~/components/seo"
-import Landing from "../views/Landing"
+import Layout from '~/components/layout'
+import SEO from '~/components/seo'
+import Landing from '../views/Landing'
 
 const IndexPage = ({ data: { allStrapiCategory } }) => {
-  const seo = { title: "Categories" }
+  const seo = { title: 'Categories' }
   return (
     <Layout noHeader>
       <SEO seo={seo} />

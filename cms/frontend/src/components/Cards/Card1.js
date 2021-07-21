@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import "./Card1.css";
+import "./Card1.css"
 
 const Card = () => {
   return (
@@ -25,7 +25,7 @@ const Card = () => {
         <div className="slice"></div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card
